@@ -1,1 +1,51 @@
 /* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 10px;
+}
+.user {
+  width: 150px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 10px;
+  margin: 10px;
+}
+.green-user {
+  background-color: greenyellow;
+  padding: 5px;
+}
+
+.grey-user {
+  background-color: gray;
+  padding: 5px;
+  position: relative;
+  top: 150px;
+}
+#chat-2 {
+  position: relative;
+}
+#x-button {
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  color: white;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  cursor: pointer;
+}
