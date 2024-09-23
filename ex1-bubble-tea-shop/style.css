@@ -1,5 +1,57 @@
 body {
+  background-color: black;
   font-family: "Kanit";
+  display: flex;
+  justify-content: center;
 }
 
 /* Start coding here */
+
+img {
+  background-image: linear-gradient(360deg, black, transparent);
+}
+
+.container {
+  position: relative;
+  margin-top: 300px;
+}
+
+.item1,
+.item2 {
+  position: absolute;
+}
+
+.item1 {
+  color: white;
+  bottom: 15px;
+  left: 15px;
+}
+
+.item2 {
+  color: white;
+  bottom: 250px;
+  left: 560px;
+  background-color: rgba(20, 20, 20, 0.5);
+  font-size: 25px;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block; /* Ensures the wrapper sizes to the image */
+}
+
+.wrapper img {
+  display: block; /* Prevents spacing below the image */
+  border: 7px solid white;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(360deg, black, transparent);
+  border: 7px solid white;
+}
